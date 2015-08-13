@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/cell_venue_background">
+
+    <ImageView android:id="@+id/cell_venue_categorie_iv"
+        android:layout_width="@dimen/venue_cell_category_iv_size"
+        android:layout_height="@dimen/venue_cell_category_iv_size"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_weight="1.0"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical" >
+
+        <TextView android:id="@+id/cell_venue_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <ProgressBar android:id="@+id/cell_venue_rating_loading_pb"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:indeterminate="true" />
+
+        <TextView android:id="@+id/cell_venue_rating_loading_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:visibility="gone" />
+
+        <LinearLayout android:id="@+id/cell_venue_rating_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView android:id="@+id/cell_venue_star1"
+                       android:layout_width="10dp"
+                       android:layout_height="10dp" />
+
+            <ImageView android:id="@+id/cell_venue_star2"
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:layout_marginLeft="3dp" />
+
+            <ImageView android:id="@+id/cell_venue_star3"
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:layout_marginLeft="3dp" />
+
+            <ImageView android:id="@+id/cell_venue_star4"
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:layout_marginLeft="3dp" />
+
+            <ImageView android:id="@+id/cell_venue_star5"
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:layout_marginLeft="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/cell_venue_distance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:singleLine="true"
+        android:layout_gravity="top|right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

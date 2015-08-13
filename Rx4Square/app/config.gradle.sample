@@ -1,0 +1,4 @@
+ext { 
+    foursquareClientId = '"YOUR_FOURSQUARE_CLIENT_ID"'
+    foursquareClientSecret = '"YOUR_FOURSQUARE_CLIENT_SECRET"'
+}

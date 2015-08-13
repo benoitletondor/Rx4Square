@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">4SquareHack</string>
+
+    <string name="rating_not_available">Rating not available</string>
+    <string name="rating_loading_error">Error loading rating</string>
+
+    <string name="toast_fetching_venues">New location available, fetching venues...</string>
+    <string name="toast_error_fetching_venues">Error while fetching venues!</string>
+</resources>
